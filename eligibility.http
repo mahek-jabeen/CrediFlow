@@ -1,0 +1,13 @@
+
+POST http://localhost:8080/api/eligibility/check
+Content-Type: application/json
+
+{
+  "monthlyIncome": 50000,
+  "monthlyExpenses": 20000,
+  "creditScore": 720,
+  "requestedLoanAmount": 500000,
+  "tenureMonths": 36,
+  "annualInterestRate": 10.5
+}
+

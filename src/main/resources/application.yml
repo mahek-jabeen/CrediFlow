@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: loan-eligibility-emi-system
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.MySQLDialect
+
+application:
+  security:
+    jwt:
+      secret-key: bXlTdXBlclNlY3VyZUpXVF9TZWNyZXRfS2V5MzI0Yml0c2xvbmdfc3RyaW5nZw==
+      expiration: 86400000
+
+server:
+  port: 8080
