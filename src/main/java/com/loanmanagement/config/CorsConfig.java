@@ -11,10 +11,10 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
 
         registry.addMapping("/**")
-                .allowedOrigins(
+                .allowedOriginPatterns(
                         "http://localhost:5173",
                         "http://localhost:5174",
-                        "https://crediflow-vhy5.onrender.com"   // ADD THIS
+                        "https://*.vercel.app"   // allow all vercel deployments
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
