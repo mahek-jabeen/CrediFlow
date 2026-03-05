@@ -2,8 +2,7 @@
  * API service for loan eligibility operations
  */
 
-const API_BASE_URL = 'http://localhost:8080';
-
+const API_BASE_URL = 'https://crediflow-vhy5.onrender.com';
 /**
  * Checks loan eligibility based on the provided payload
  * 

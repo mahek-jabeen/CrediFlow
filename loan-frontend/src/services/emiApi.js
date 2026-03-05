@@ -2,7 +2,7 @@
  * API service for EMI schedule operations
  */
 
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'https://crediflow-vhy5.onrender.com';
 
 /**
  * Generates EMI schedule based on the provided payload
