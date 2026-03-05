@@ -157,8 +157,8 @@ The application follows a **three-tier layered architecture**:
    ```
 
 4. **Access the application**
-   - Base URL: `http://localhost:8080/api`
-   - H2 Console: `http://localhost:8080/api/h2-console`
+   - Base URL: `https://crediflow.onrender.com/api`
+   - H2 Console: `https://crediflow.onrender.com/api/h2-console`
 
 ### Running with Production Profile
 

@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = 'https://crediflow.onrender.com/api';
 
 export const authService = {
   async signup(userData) {

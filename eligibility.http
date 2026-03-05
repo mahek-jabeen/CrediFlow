@@ -1,5 +1,5 @@
 
-POST http://localhost:8080/api/eligibility/check
+POST https://crediflow.onrender.com/api/eligibility/check
 Content-Type: application/json
 
 {

@@ -27,7 +27,7 @@ const LoanStatusPanel = () => {
         setLoading(false);
         return;
       }
-      const response = await fetch('http://localhost:8080/api/user/loan/status', {
+      const response = await fetch('https://crediflow.onrender.com/api/user/loan/status', {
         method: 'GET',
         headers: {
           Authorization: 'Bearer ' + token,

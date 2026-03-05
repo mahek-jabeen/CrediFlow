@@ -84,7 +84,7 @@ const AdminLoanManagement = () => {
   const fetchMetrics = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:8080/api/admin/loans/metrics', {
+      const response = await fetch('https://crediflow.onrender.com/api/admin/loans/metrics', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -105,7 +105,7 @@ const AdminLoanManagement = () => {
   const exportCsv = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:8080/api/admin/loans/export/csv', {
+      const response = await fetch('https://crediflow.onrender.com/api/admin/loans/export/csv', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -135,7 +135,7 @@ const AdminLoanManagement = () => {
   const exportPdf = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:8080/api/admin/loans/export/pdf', {
+      const response = await fetch('https://crediflow.onrender.com/api/admin/loans/export/pdf', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -184,7 +184,7 @@ const AdminLoanManagement = () => {
       if (amountMinFilter) params.append('minAmount', amountMinFilter);
       if (amountMaxFilter) params.append('maxAmount', amountMaxFilter);
 
-      const response = await fetch(`http://localhost:8080/api/admin/loans?${params}`, {
+      const response = await fetch(`https://crediflow.onrender.com/api/admin/loans?${params}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -214,7 +214,7 @@ const AdminLoanManagement = () => {
   const handleViewAuditLogs = async (loanId) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:8080/api/admin/loans/${loanId}/audit-logs`, {
+      const response = await fetch(`https://crediflow.onrender.com/api/admin/loans/${loanId}/audit-logs`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -247,7 +247,7 @@ const AdminLoanManagement = () => {
     setLoading(true);
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:8080/api/admin/loans/${selectedLoan.id}/under-review`, {
+      const response = await fetch(`https://crediflow.onrender.com/api/admin/loans/${selectedLoan.id}/under-review`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -276,7 +276,7 @@ const AdminLoanManagement = () => {
   const handleView = async (loanId) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:8080/api/admin/loans/${loanId}`, {
+      const response = await fetch(`https://crediflow.onrender.com/api/admin/loans/${loanId}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -315,7 +315,7 @@ const AdminLoanManagement = () => {
     setLoading(true);
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:8080/api/admin/loans/${selectedLoan.id}/approve`, {
+      const response = await fetch(`https://crediflow.onrender.com/api/admin/loans/${selectedLoan.id}/approve`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -350,7 +350,7 @@ const AdminLoanManagement = () => {
     setLoading(true);
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:8080/api/admin/loans/${selectedLoan.id}/reject`, {
+      const response = await fetch(`https://crediflow.onrender.com/api/admin/loans/${selectedLoan.id}/reject`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
