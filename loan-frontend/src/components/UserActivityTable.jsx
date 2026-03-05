@@ -17,7 +17,7 @@ const UserActivityTable = () => {
     try {
       setLoading(true);
       
-      const response = await fetch('https://crediflow.onrender.com/api/admin/users', {
+      const response = await fetch('https://crediflow-vhy5.onrender.com/api/admin/users', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

@@ -17,7 +17,7 @@ const LoanApplicationsPanel = () => {
     try {
       setLoading(true);
       
-      const response = await fetch('https://crediflow.onrender.com/api/admin/loan-applications', {
+      const response = await fetch('https://crediflow-vhy5.onrender.com/api/admin/loan-applications', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const LoanApplicationsPanel = () => {
 
   const handleApprove = async (applicationNumber) => {
     try {
-      const response = await fetch('https://crediflow.onrender.com/api/admin/loan-approval', {
+      const response = await fetch('https://crediflow-vhy5.onrender.com/api/admin/loan-approval', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ const LoanApplicationsPanel = () => {
 
   const handleReject = async (applicationNumber, reason) => {
     try {
-      const response = await fetch('https://crediflow.onrender.com/api/admin/loan-approval', {
+      const response = await fetch('https://crediflow-vhy5.onrender.com/api/admin/loan-approval', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ const LoanApplication = () => {
   const fetchLoanStatus = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('https://crediflow.onrender.com/api/user/loan/status', {
+      const response = await fetch('https://crediflow-vhy5.onrender.com/api/user/loan/status', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ const LoanApplication = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('https://crediflow.onrender.com/api/user/loan/apply', {
+      const response = await fetch('https://crediflow-vhy5.onrender.com/api/user/loan/apply', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
